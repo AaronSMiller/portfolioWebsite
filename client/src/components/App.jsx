@@ -7,9 +7,7 @@ import PortfolioContainer from './PortfolioContainer/PortfolioContainer.jsx'
 
 const App = () => {
   return (
-    <>
     <PortfolioContainer />
-    </>
   );
 }
 

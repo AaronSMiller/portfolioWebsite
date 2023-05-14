@@ -1,5 +1,5 @@
 import Home from '../components/PortfolioContainer/Home/Home.jsx';
-// import AboutMe from '../component/PortfolioContainer/AboutMe/AboutMe.jsx'
+import AboutMe from '../components/PortfolioContainer/AboutMe/AboutMe.jsx'
 // import Resume from '../PortfolioContainer/Resume/Resume'
 // import Testimonial from '../PortfolioContainer/Testimonial/Testimonial'
 // import ContactMe from '../PortfolioContainer/ContactMe/ContactMe'
@@ -9,10 +9,10 @@ export const TOTAL_SCREENS = [
     screen_name: "Home",
     component: Home,
   },
-  // {
-  //   screen_name: "About Me",
-  //   component: AboutMe,
-  // },
+  {
+    screen_name: "About Me",
+    component: AboutMe,
+  },
   // {
   //   screen_name: "Resume",
   //   component: Resume,
