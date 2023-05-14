@@ -1,5 +1,5 @@
 import Home from '../components/PortfolioContainer/Home/Home.jsx';
-// import AboutMe from '../PortfolioContainer/AboutMe/AboutMe'
+// import AboutMe from '../component/PortfolioContainer/AboutMe/AboutMe.jsx'
 // import Resume from '../PortfolioContainer/Resume/Resume'
 // import Testimonial from '../PortfolioContainer/Testimonial/Testimonial'
 // import ContactMe from '../PortfolioContainer/ContactMe/ContactMe'
