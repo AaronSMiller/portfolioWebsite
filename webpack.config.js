@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: [/\.jsx$/],
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -29,14 +29,10 @@ module.exports = {
           { loader: "css-loader" }
         ]
       },
-      // {
-      //   test: /\.png$/i,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //     }
-      //   ]
-      // }
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: "asset/resource"
+      }
     ]
   }
 };
