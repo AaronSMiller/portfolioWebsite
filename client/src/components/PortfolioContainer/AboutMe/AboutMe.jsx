@@ -54,7 +54,7 @@ function AboutMe(props) {
               {renderHighlight()}
             </div>
             <div className='about-me-options'>
-              <button className='btn primary-btn'
+              <button className='btn highlighted-btn'
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >Hire Me {" "}
               </button>
