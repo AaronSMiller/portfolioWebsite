@@ -47,7 +47,7 @@ export default function Profile(props) {
             </span>
           </div>
           <div className='profile-options'>
-            <button className='btn primary-btn'
+            <button className='btn highlighted-btn'
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             > Hire Me {" "}
             </button>
