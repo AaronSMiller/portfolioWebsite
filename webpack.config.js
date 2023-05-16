@@ -33,8 +33,14 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|pdf|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         type: "asset/resource"
+      },
+      {
+        test: /\.pdf$/i,
+        use: {
+          loader: "raw-loader",
+        },
       }
     ]
   },

@@ -4,6 +4,7 @@ import ScrollService from '../../../../utilities/ScrollService.jsx'
 import './Profile.css'
 
 
+
 export default function Profile(props) {
   return (
     <div className='profile-container'>
@@ -51,7 +52,7 @@ export default function Profile(props) {
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             > Hire Me {" "}
             </button>
-            <a href='AaronMillerResumeWebsite.pdf'>
+            <a href='AaronMillerPublicResume.pdf'>
               <button className='btn highlighted-btn'>Get Resume</button>
             </a>
           </div>

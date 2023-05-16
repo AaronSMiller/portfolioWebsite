@@ -39,6 +39,10 @@ function AboutMe(props) {
     )
   }
 
+  const openResume = () => {
+    window.open('AaronMillerPublicResume.pdf', '_blank');
+  }
+
   return (
     <div className='about-me-container' id={props.id || ""}>
       <div className='about-me-parent'>
@@ -54,13 +58,8 @@ function AboutMe(props) {
               {renderHighlight()}
             </div>
             <div className='about-me-options'>
-              <button className='btn highlighted-btn'
-              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-              >Hire Me {" "}
-              </button>
-              <a href='AaronMillerResumeWebsite.pdf'>
-                <button className='btn highlighted-btn'>Get Resume</button>
-              </a>
+              <button className='btn highlighted-btn' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>Hire Me</button>
+              <button className='btn highlighted-btn' onClick={openResume}>Get Resume</button>
             </div>
           </div>
         </div>
