@@ -1,10 +1,13 @@
 var path = require("path");
+const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
 var SRC_DIR = path.join(__dirname, "/client/src");
 var DIST_DIR = path.join(__dirname, "/client/dist");
 
 module.exports = {
   mode: "production",
-  devtool: "inline-source-map",
+  devtool: "source-map",
   entry: `${SRC_DIR}/index.jsx`,
   output: {
     filename: "bundle.js",
@@ -34,5 +37,12 @@ module.exports = {
         type: "asset/resource"
       }
     ]
-  }
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin(),
+    ],
+  },
 };

@@ -25,7 +25,7 @@ router.post("/contact", (req, res) => {
   let mailOptions = {
     from: data.email,
     to: process.env.TOEMAILADD,
-    subject: `message from ${data.name}`,
+    subject: `* Message from ${data.name} *`,
     html: `
 
             <h3>Informations<h3/>
